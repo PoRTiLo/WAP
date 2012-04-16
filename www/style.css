@@ -1,0 +1,177 @@
+/*
+ * --------------IJA-----------------
+ *
+ * Project:  IJA 2D visualization tool.
+ * File:     style.css
+ *
+ * Created on May 5, 2010
+ *
+ * Encoding: UTF-8
+ *
+ * Description:
+*/
+
+
+body {
+	font-size: 1em;
+	font-family: arial, verdana, sans-serif;
+	background-image: url('img/back.png');
+	background-repeat: repeat;		
+}
+
+
+#page {
+	border: 2px blue solid;
+	background:white;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+}
+
+/**************************** hlavicka ****************************************/
+#page #myHead {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#page #myHead a {
+	color: black;
+	text-decoration: none;
+}
+
+#myLine {
+	color: #f00;
+	background-color: #f00;
+	height: 5px;
+}
+/**************************** menu ********************************************/
+#myBody #myMenu {
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	width:150px;
+	float:left;
+}
+
+#myBody #myMenu a:hover {
+	color: red;
+}
+
+#myBody #myMenu ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+#myBody #myMenu ul li {
+	border-top: 1px blue solid;
+	padding-bottom: 15px;
+}
+
+#myBody #myMenu ul li a {
+	color: blue;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#myBody #myMenu ul li .mySubmenu {
+	border: none;
+	padding:0;
+	font-size: 0.8em;
+}
+
+#myBody #myMenu ul li .mySubmenu a {
+	color: blue;
+	font-weight: normal;
+}
+
+#myBody #myMenu ul li .mySubmenu a:hover {
+	color: red;
+}
+/**************************** obsah *******************************************/
+#myBody #myContent {
+	margin-left: 180px;
+	text-align: justify;
+	min-width: 300px;
+}
+
+#myFirstP {
+	padding-top: 40px;
+}
+
+.img {
+	text-align: center;
+}
+
+.img img{
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nahoru {
+
+	text-align: right;
+}
+
+#myBody h1 {
+	font-size: 1.7em;
+	padding-left: 10px;
+	background-color: #add8e6;
+}
+
+#myBody h2 {
+	font-size: 1.4em;
+	padding-left: 20px;
+	background-color: #add8e6;
+}
+
+#myBody table {
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 1px;
+	border-style: solid;
+	margin-bottom: 20px;
+}
+
+#myBody th {
+	font-weight: bold;
+	background-color: #6FF;
+	border-top: 1px dotted gray;
+	border-left: 1px dotted gray;
+	border-right: 1px solid green;
+	border-bottom: 1px solid green;
+}
+
+#myBody td {
+	padding-left: 15px;
+	padding-right: 15px;
+	border-width: 1px;
+	border-color: gray;
+	border-style: dotted;
+}
+
+
+/**************************** paticka *****************************************/
+#footer {
+	border-top:dotted 1px;
+	clear: both;
+	background-color: white;
+	text-align: center;
+	color: black;
+	font-size: 0.8em;
+	margin: 0 0 0 0;
+	padding: 0.5em 0 0.5em 0;
+}
+
+#footer p {
+	display: inline;
+	font-style: italic;
+}
+
+#footer span {
+	margin: 0 .5em 0 .5em;
+}
