@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>   
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="content-language" content="cs" >
+		<title>Nápověda projektu - PDB</title>
+		<meta name="author" content="xvacul17, xrohov01, xsendl00">
+      <meta name="keywords" content="PDB, manuál" >
+		<meta name="description" content="Nápověda. Uživatelská příručka.">      
+
+		<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+	</head>
+
+	<body>
+		<div id="page">
+			<div id="myHead">
+				<h1><a href="./help.html" title="Help"><span>Nápověda projektu - PDB</span></a></h1>
+				<h2><span>Manors & Castles</span></h2>
+			</div>
+			<hr id="myLine">
+			<div id="myBody">
+				<div id="myMenu">
+					<ul>
+						<li><a href="#hlavni" title="hlavní panel">Hlavní panel</a>
+							<ul>
+								<li class="mySubmenu"></li>
+							</ul>
+						</li>
+						<li><a href="#mapa" title="mapa">Mapa</a>
+							<ul>
+								<li class="mySubmenu"><a href="#pridaniHradu" title="přidání hradu">Přidání hradu</a></li>
+								<li class="mySubmenu"><a href="#pridaniPanstvi" title="přidání panství">Přidání panství</a></li>
+							</ul>
+						</li>
+						<li><a href="#editace" title="editace">Editace</a>
+							<ul>
+								<li class="mySubmenu"><a href="#editaceHradu" title="editace hradu">Editace hradu</a></li>
+								<li class="mySubmenu"><a href="#editacePanstvi" title="editace panství">Editace panství</a></li>
+							</ul>
+						</li>
+						<li><a href="#hledani" title="hledani">Vyhledávání</a></li>
+						<li><a href="#operace" title="Prostorové operace">Prostorové operace</a></li>
+						<li><a href="#zkratky" title="zkratky v programu">Klávesové zkratky</a></li>
+					</ul>
+				</div><!-- myMenu -->
+
+				<div id="myContent">
+					<p id="myFirstP">
+						Po zapnutí programu Manors & Castles, který je psán v jazyce Java a lokalizace prostředí je anglická, je potřeba se přihlásit do databáze. Přihlášení se provede pomocí nabídky <b>File->Connect</b>, kde jsou již 
+						předvyplněny přihlašovací údaje. Korektním připojením do databáze budete informováni a následně budou automaticky načteny všechny hrady a panství 
+						a vykresleny na mapu, která tvoří převážnou část aplikace. Při ne-inicializaci databáze budete upozorněni, že je ji potřeba zinicializovat.
+						Program je tvořen třemi hlavními částmi:
+					</p>
+					<div class="img">
+						<img src="img/mapa.png" alt="mapa" width="546" height="302">
+						<small>1.obrázek - kreslící mapa.</small>
+					</div>
+					<ul>
+						<li>hlavní panel</li>
+						<li>mapa</li>
+						<li>editační dialogy</li>
+					</ul>
+					<h1><a name="hlavni">Hlavní panel</a></h1>
+					<p>
+						Hlavní panel obsahuje čtyři nabídky File, SQL, Edit a Help. Pomocí  File je možné provést odhlášení z databáze a případně se znovu přihlásit nebo aplikaci ukončit 
+						(taktéž možno provést pomocí křížku v pravém horním rohu). Stav otevřené mapy bude uložen.
+					</p>
+					<div class="img">
+						<img src="img/panel.png" alt="panel" width="546" height="90">
+						<small>2.obrázek - hlavní panel aplikace.</small>
+					</div>
+					<p>
+						Nabídka SQL slouží k již zmíněné inicializaci databáze.
+					</p>
+					<p>
+						Pomocí položky Edit, která je i prezentována pomocí tlačíte, můžeme provádět změny s objekty na mapě. Jako ja například přidávat panství, hrad, editovat je nebo mazat. 
+						Poslední položka je vyhledávání.
+					</p>
+					<p>
+						V poslední nabídce Help se nachází vyvolání nápovědy (Help), kterou nyní čtete a položka About, informující o autorech projektu.
+					</p>
+					<div class="nahoru"><a href="./help.html" title="nahoru">nahoru</a></div>
+					<h1><a name="mapa">Mapa</a></h1>
+					<p>
+						Stěžejním projektu je velká mapa, jejíž cílem je zobrazovat jednotlivá panství a hrady. Mapa působí, ale také se i chová velmi intuitivně. Jednotlivé hrady jednoduše 
+						pomocí myši uchopíte a přemístíte na jinou pozici. Jak hrad tak i panství je rozlišeno barvou a jménem objektu.
+					</p>
+					<h2><a name="pridaniHradu">Přidání hradu</a></h2>
+					Při přidání nového hradu pomocí tlačítka <b>Create castle</b> musíte vyplnit některé povinné položky jako je jméno hradu a jeho popis. Pomocí záložky <b>Picture</b> je 
+					možno ke každému hradu přidat několik obrázku, které by jej měly charakterizovat. Záložka je tvořena náhledem obrázků přidaných hradů a jejich seznamem. Po stisku tlačítka 
+					<b>Add</b> bude hrad vytvořen, okno uzavřeno a bude se čekat na stisk levého tlačítka myši na mapu, čímž bude určena nová pozice hradu. Tlačítkem <b>Cancel</b> 
+					přidávání hradu ukončíte beze změny.
+					<div class="img">
+						<img src="img/addCastle.png" alt="Přidání hradu" width="398" height="420">
+						<small>3.obrázek - přidání hradu.</small>
+					</div>
+					<div class="nahoru"><a href="./help.html" title="nahoru">nahoru</a></div>
+					<h2><a name="pridaniPanstvi">Přidání panství</a></h2>
+					Tak jako u přidání hradu tak i pro přidání panství existuje tlačítko <b>Create manor</b>. Taktéž zde se nacházejí políčka, které je nutné vyplnit, konkrétně název panství a 
+					jeho popis. Před uzavřením dialogového okna je vhodné vybrat z box panelu formát polygonu. Vybírat lze ze čtyř možností: polygon, kruh, čtverec a obdélník. Po stisku 
+					tlačítka <b>Add</b> je opět očekáván stisk levého tlačítka myši. Nyní již pouze, ale nestačí jeden klik, ale jsou požadovány stisky dva. Konkrétně u kruhu to je střed a poloměr, 
+					u čtverce a u obdelníku počáteční a koncový bod úhlopříčky. Nejpoužívanější tvar je polygon, který je tvořen body mezi nimiž jsou vykreslovány úsečky. První a poslední bod 
+					polygonu se spojí automaticky po stiku pravého tlačítka myši.
+					<div class="img">
+						<img src="img/addManor.png" alt="Přidání panství" width="374" height="287">
+						<small>4.obrázek - přidání panství.</small>
+					</div>
+					<div class="nahoru"><a href="./help.html" title="nahoru">nahoru</a></div>
+					<h1><a name="editace">Editace</a></h1>
+					<h2><a name="editaceHradu">Editace hradu</a></h2>
+					Pro editace hradu je potřeba nejdříve některý hrad označit (má jinou bravu než ostatní) a následně zmáčknout tlačítko <b>Edit</b>. Po chvilce čekání (načítání obrázků z databáze)
+					se otevře nové dialogové okno, tvořené třemi částmi:
+					<ul>
+						<li>hlavní panel</li>
+						<li>panel s obrázkem</li>
+						<li>náhledy obrázku</li>
+					</ul>
+					<div class="img">
+						<img src="img/editCastle.png" alt="Editace hradu" width="500" height="470">
+						<small>5.obrázek - editace hradu.</small>
+					</div>
+					Pravý panel zobrazuje náhledy všech obrázků přiřazených k danému hradu. Při výběru jedno z nich se zobrazí jeho větší náhled nalevo a pomocí tlačítek v hlavním panelu jej lze 
+					měnit -otáčet, překlápět, otáčet zrcadlově a měnit na černobílou formu. V neposlední řadě je zde možno editovat data související přímo s hradem to jeho název a popis. 
+					Informativně zde naleznete jeho polohu vyjádřenou pomocí souřadnicového sytému XY.
+
+					<div class="nahoru"><a href="./help.html" title="nahoru">nahoru</a></div>
+					<h2><a name="editacePanstvi">Editace panství</a></h2>
+					Editace panství umožňuje změnit jméno panství a jeho popis.
+					<div class="img">
+						<img src="img/editManor.png" alt="Editace panství" width="367" height="262">
+						<small>6.obrázek - editace panství.</small>
+					</div>
+					<div class="nahoru"><a href="./help.html" title="nahoru">nahoru</a></div>
+					
+					<h1><a name="hledani">Vyhledávání</a></h1>
+					Vyhledávání je postaveno na hledání podobných hradů podle obrázků. tuto nabídku naleznete v menu Edit search local nebo pod známou klávesovou zkratkou ctrl+f. 
+					V první řadě se objeví prohlížeč souboru pomocí něž vyberete obrázek, který bude slouži jako předloha pro vyhledávání. Po stisku tlačístak Search, zažne 
+					vyhledávání podobných hradů na základě Vámi vybraného obrazku. Otevře se nové dialogové okno jež se postupně bude naplňovat daty.
+					<div class="img">
+						<img src="img/searchCastle.png" alt="Vyhledávání hradu" width="500" height="404">
+						<small>7.obrázek - vyhledávání hradu.</small>
+					</div>
+					Nově otevřené okno vzhledově připomíná editační okno hradu, hlavní rozdíl je že zde lze pouze výsledky prohlížet a né editovat. Pravá strana dialogového okna je 
+					tvořeno miniaturami nalezených hradů. Po vybrání jedno z nich jsou načtena data a je taktéž zobrazen obrázke jež byl vybrán jako nejlepší shoda. Pomocí kombo box 
+					nabídky můžete prohlížet další obrázky související s daným hradem.
+					<div class="nahoru"><a href="./help.html" title="nahoru">nahoru</a></div>
+					
+					<h1><a name="operace">Prostorové operace</a></h1>
+					Pomocí tlačítka <b>Object operations</b> lze provádět prostorové operace nad objekty mapy. Otevře se nové okno znázorněné 8.obrázkem. Je tvořeno šesti záložky, 
+					kde každá reprezentuje jinou prostorovou funkci.
+					<div class="img">
+						<img src="img/fce.png" alt="Vyhledávání hradu" width="547" height="290">
+						<small>8.obrázek - prostorové operace.</small>
+					</div>
+					<ul>
+						<li>vzdálenost - vzdálenost mezi dvěma objekty</li> 
+						<li>obsah plochy - velikost obsahu plochy </li>
+						<li>těžiště -výpočet těžiště objektu</li>
+						<li>průnik - průnik dvou objektů</li>
+						<li>vztah - vztah objektu s dalšími objekty</li>
+						<li>statistiky - všemožné statistiky</li>
+					</ul>
+					<div class="nahoru"><a href="./help.html" title="nahoru">nahoru</a></div>
+					
+					<h1><a name="zkratky">Klávesové zkratky</a></h1>
+					<table>
+						<tr><th colspan="2">Hlavní okno</th></tr>
+						<tr><td>Ctrl+Q</td><td>Ukončení aplikace</td></tr>
+						<tr><td>Ctrl+Shitf+M</td><td>Vytvoření nového panství</td></tr>
+						<tr><td>Ctrl+Shitf+C</td><td>Vytvoření nového hradu</td></tr>
+						<tr><td>Ctrl+Shitf+O</td><td>Editace objektu (hrad nebo panství)</td></tr>
+						<tr><td>Ctrl+f</td><td>Vyhledávání podle obrázku</td></tr>
+						<tr><td>Delete</td><td>Smazání aktivního objektu (hrad nebo panství)</td></tr>
+						<tr><td>F1</td><td>Zobrazení této nápovědy</td></tr>
+						<tr><th colspan="2">Editace hradu</th></tr>
+						<tr><td>Ctrl+O</td><td>Přidání nového obrázku</td></tr>
+						<tr><td>Delete</td><td>Smazání vybraného obrázku</td></tr>
+						<tr><td>Ctrl+R</td><td>Otočení obrázku doprava</td></tr>
+						<tr><td>Ctrl+L</td><td>Otočení obrázku doleva</td></tr>
+						<tr><td>Ctrl+I</td><td>Překlopení obrázku</td></tr>
+						<tr><td>Ctrl+M</td><td>Zrcadlové zobrazení obrázku</td></tr>
+						<tr><td>Ctrl+B</td><td>Převod obrázku do černobílé formy</td></tr>
+					</table>
+					<div class="img"><small>1.tabulka - klávesové zkratky.</small></div>
+					<div class="nahoru"><a href="./help.html" title="nahoru">nahoru</a></div>
+				</div><!-- myContent -->
+
+			</div><!-- myBody -->
+
+			<!--                       PATICKA                           -->
+			<div id="footer">
+				<p>&copy; PDB <span>|</span>xvacul17, xrohov01, xsendl00 <span>|</span> Manors & Castles </p>
+			</div>
+
+		</div><!-- page -->
+	</body>
+</html>
